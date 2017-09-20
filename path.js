@@ -17,7 +17,6 @@ function stackFilesFrom() {
             }
         }
     }
-    console.log(_files);
     return _files;
 }
 

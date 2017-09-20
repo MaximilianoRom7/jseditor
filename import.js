@@ -5,5 +5,6 @@ module.exports = {
     log: require('log4js'),
     path: require('path'),
     util: require('util'),
-    fs: require('fs')
+    fs: require('fs'),
+    mvc: require('express')
 }
