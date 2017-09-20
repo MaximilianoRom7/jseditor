@@ -1,0 +1,2 @@
+ln -s ../../node_modules/lodash lodash
+ln -s ../../node_modules/jquery/dist/ jquery
