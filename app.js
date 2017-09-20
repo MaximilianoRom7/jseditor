@@ -1,5 +1,5 @@
+const util = require('./util');
 const path = require('./path');
-const _file = path.getScriptName();
-const log = require('./logger')(_file);
+const log = require('./logger')();
 
-log.info("Server Listenning on %s:%s");
+util.logStartListenning();

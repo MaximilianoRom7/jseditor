@@ -1,5 +1,4 @@
 const imports = require('./import');
-const logger = imports.log;
 const path = imports.path;
 
 conf = {
@@ -18,6 +17,7 @@ function stackFilesFrom() {
             }
         }
     }
+    console.log(_files);
     return _files;
 }
 
@@ -25,8 +25,8 @@ module.exports = {
     getScriptName: function (filename) {
 	if(!filename) {
             var _files = stackFilesFrom();
-            if(_files.length > 1) {
-                var filename = _files[1];
+            if(_files.length > 2) {
+                var filename = _files[3];
             }
             else {
                 var filename = __filename;
